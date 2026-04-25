@@ -324,8 +324,8 @@ body {
 .services-list {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .services-list div {
@@ -392,10 +392,11 @@ section {
 }
 
 .container1 {
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .heading1 {
@@ -837,4 +838,45 @@ section {
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 22px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1 {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
 }
